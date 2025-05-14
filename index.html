@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portofolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>    
+        <div class="container">
+            <nav aria-label="Primary navigation">
+                <div class="logo" tabindex="0">MyPortofolio</div>
+                    <ul>
+                    <li><a href="#about"></a>About Me</li>
+                    <li><a href="#skills"></a>Skils</li>
+                    <li><a href="#projects"></a>Projects</li>
+                    <li><a href="#contact"></a>Contact</li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+<main class="container" tabindex="0">
+
+        <!-- About Section -->
+    <section id="about" class="about-me" aria-label="About me section">
+        <h1>👋 Hallo Bro, Saya <strong>Muhamad Fauzan Pratama</strong></h1>
+        <p>
+        Selamat datang di situs web portofolio saya! Saya adalah seorang <strong>Siswa di SMK Plus Pelita Nusantara</strong>
+    yang senang membuat aplikasi web menggunakan <strong>HTML,CSS, dan JavaScript</strong>.
+        </p>
+        <p>
+        Saya percaya bahwa teknologi adalah alat penting untuk membangun masa depan yang lebih baik.
+        </p>
+    </section>
+    <!-- Skill section -->
+    <section id="skil" aria-label="Skills sectionl">
+        <h2>💡 Skills</h2>
+        <div class="skills-list" role="list">
+        <span class="skill" role="listitem">🔥 HTML5</span>
+        <span class="skill" role="listitem">🎨 CSS</span>
+        <span class="skill" role="listitem">⚙️ JavaScript</span>
+        <span class="skill" role="listitem">📱 Responesive Desing</span>
+        <span class="skill" role="listitem">🔧 Git & Github</span>
+        <span class="skill" role="listitem">📦 Bootstrap</span>
+    </div>
+    </section>
+
+    <!-- Project Section -->
+    <section id="Projects" aria-label="Projects section">
+    <h2>🚀 Projects</h2>
+    <div class="Project-list">  
+        <article class="Project-item" tabindex="0">
+            <h3>🎯 Portofolio Website</h3>
+            <p>
+                Website pribadi yang menampilkan profil, keterlampilan, dan proyek. Dibangun menggunakan HTML, CSS, dan JavaScript.
+            </p>
+            <a href="#" class="Project-link" target="_blank" rel="noopener">🔗 Lihat Project</a>
+        </article>
+
+        <article class="Project-item" tabindex="0">
+            <h3>📝 To-Do List App</h3>
+            <img src="didi.png" alt="burung">
+            <p>
+                Aplikasi daftar tugas interaktif untuk menambah, menghapus, dan menandai tugas sebagai selesai.
+            </p>
+                <a href="#" class="Project-link" target="_blank" rel="noopener">🔗 Lihat Project</a>
+        </article>
+
+        <article class="Project-item" tabindex="0">
+              <img src="card.png" alt="card">
+            <h3>🃏 Kartu Profil Developer (Profile Card)</h3>
+            <p>
+                Membuat kartu profil interaktif untuk menampilkan informasi pribadi dan sosial media, dengan fitur animasi flip (berputar) saat diklik..
+                Dibuat dengan HTML,CSS,& JavaScript
+            </p>
+                <a href="https://kartu-profil-developer-profile-card.vercel.app/" class="Project-link" target="_blank" rel="noopener">🔗 Lihat Project</a>
+        </article>
+
+    </div>
+    </section>
+
+    <!--Contac Section-->
+        <section id="contact" aria-label="Contact section">
+          <h2>📬Contact Me</h2>
+          <form id="contact-me">
+
+            <label for="name">Nama lengkap</label>
+            <input type="text" name="name" id="name" placeholder="Nama Anda" aria-label="Nama Anda" required/>
+            <div class="error" id="name-error"></div>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Email Anda..." aria-label="Email Anda" required/>
+            <div class="error" id="email"></div>
+
+            <label for="message">Pesan</label>
+            <textarea id="message" name="message" rows="4" placeholder="Tulis pesan Anda..." aria-label="Email Anda" required></textarea>textarea>
+            <div class="error" id="email"></div>
+
+            <button type="submit" aria-label="Kirim Pesan">✉️ Kirim Pesan</button>
+            <p class="success-msg" id="success-message" aria-live="polite"></p>
+            
+          </form>            
+        </section>
+</main>
+<br>
+<footer>
+    &copy;2025 Fauzan SMK Penus
+</footer>
+     <script src="script.js"></script>
+</body>
+</html>
