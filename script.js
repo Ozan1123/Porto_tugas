@@ -1,4 +1,4 @@
-const from = document.getElementById('contact-from');
+ const from = document.getElementById('contact-from');
  const nameInput = from.name;
  const emailInput = from.email;
  const messageInput = from.message;
@@ -43,29 +43,4 @@ if (valid) {
     successMsg.textContent = 'Thank you! Your message has been sent';
     from.reset();
 }
-});
-// animasi 
-
-// Add this JavaScript at the end of your HTML, before the closing </body> tag
-// Wait for the DOM to fully load
-document.addEventListener('DOMContentLoaded', function() {
-    const skillItems = document.querySelectorAll('.skill');
-    
-    skillItems.forEach(item => {
-        item.addEventListener('click', function() {
-            // Remove animation class
-            this.classList.remove('pulse');
-            
-            // Force reflow
-            void this.offsetWidth;
-            
-            // Add animation class
-            this.classList.add('pulse');
-            
-            // Remove class after animation completes
-            setTimeout(() => {
-                this.classList.remove('pulse');
-            }, 800);
-        });
-    });
 });
