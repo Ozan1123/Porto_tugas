@@ -13,10 +13,10 @@
             <nav aria-label="Primary navigation">
                 <div class="logo" tabindex="0">MyPortofolio</div>
                     <ul>
-                    <li><a href="#about"></a>About Me</li>
-                    <li><a href="#skills"></a>Skils</li>
-                    <li><a href="#projects"></a>Projects</li>
-                    <li><a href="#contact"></a>Contact</li>
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#skills">Skils</a></li>
+                    <li><a href="#Projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
         </div>
@@ -36,7 +36,7 @@
         </p>
     </section>
     <!-- Skill section -->
-   <section id="skil" aria-label="Skills sectionl">
+   <section id="skills" aria-label="Skills sectionl">
         <h2>💡 Skills</h2>
         <div class="skills-list" role="list">
         <span class="skill" role="listitem">🔥 HTML5</span>
@@ -44,12 +44,12 @@
         <span class="skill" role="listitem">⚙️ JavaScript</span>
         <span class="skill" role="listitem">📱 Responesive Desing</span>
         <span class="skill" role="listitem">🔧 Git & Github</span>
-        <span class="skill" role="listitem">📦 Bootstrap</span>
+        <span class="skill" role="listitem">🎮 Unity</span>
     </div>
     </section>
 
     <!-- Project Section -->
-    <section id="Projects" aria-label="Projects section">
+    <section id="Projects" aria-label="Projects-section">
     <h2>🚀 Projects</h2>
     <div class="Project-list">  
         <article class="Project-item" tabindex="0">
@@ -76,25 +76,28 @@
 
     <!--Contac Section-->
         <section id="contact" aria-label="Contact section">
-          <h2>📬Contact Me</h2>
-          <form id="contact-me">
+            <h2>📬Contact Me</h2>
+            <form id="contact-me"
+            action="https://formspree.io/f/xanozqaq"
+            method="POST"
+  >
 
-            <label for="name">Nama lengkap</label>
-            <input type="text" name="name" id="name" placeholder="Nama Anda" aria-label="Nama Anda" required/>
-            <div class="error" id="name-error"></div>
+                <label for="name">Nama lengkap</label>
+                <input type="text" name="name" id="name" placeholder="Nama Anda" aria-label="Nama Anda" required/>
+                <div class="error" id="name-error"></div>
 
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" placeholder="Email Anda..." aria-label="Email Anda" required/>
-            <div class="error" id="email"></div>
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Email Anda..." aria-label="Email Anda" required/>
+                <div class="error" id="email"></div>
 
-            <label for="message">Pesan</label>
-            <textarea id="message" name="message" rows="4" placeholder="Tulis pesan Anda..." aria-label="Email Anda" required></textarea>
-            <div class="error" id="email"></div>
+                <label for="message">Pesan</label>
+                <textarea id="message" name="message" rows="4" placeholder="Tulis pesan Anda..." aria-label="Email Anda" required></textarea>
+                <div class="error" id="email"></div>
 
-            <button type="submit" aria-label="Kirim Pesan">✉️ Kirim Pesan</button>
-            <p class="success-msg" id="success-message" aria-live="polite"></p>
-            
-          </form>            
+                <button type="submit" aria-label="Kirim Pesan">✉️ Kirim Pesan</button>
+                <p class="success-msg" id="success-message" aria-live="polite"></p>
+                
+            </form>            
         </section>
 </main>
 <br>
